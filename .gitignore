@@ -9,7 +9,5 @@ dist/
 .ipynb_checkpoints/
 .virtual_documents/
 
-MODEL LAST TODOS.txt
 history/
-main - Copy.ipynb
-wgan setup paths.txt
+notes/
