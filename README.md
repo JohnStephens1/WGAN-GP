@@ -21,9 +21,7 @@ The model is trained unconditionally: a random latent vector is transformed into
 
 The implementation follows the WGAN-GP formulation, including the Wasserstein critic objective and gradient penalty, but the training system is deliberately built around the requirements of the algorithm rather than around the default Keras training loop.
 
-The primary implementation was trained on **16,000 cat-face images for 1,000 epochs**, using `tf.distribute.MirroredStrategy` across two NVIDIA T4 GPUs. The complete run, including model state, metrics and generated images, was recorded during training, and can be found [here](https://www.kaggle.com/).
-
-; TODO update kaggle link
+The primary implementation was trained on **16,000 cat-face images for 1,000 epochs**, using `tf.distribute.MirroredStrategy` across two NVIDIA T4 GPUs. The complete run, including model state, metrics and generated images, was recorded during training, and can be found [here](https://www.kaggle.com/code/johnstephens0/distributed-wgan-gp/notebook).
 
 ## Why a Custom Training System?
 
@@ -154,9 +152,7 @@ This is the primary implementation and the recommended starting point.
 
 ## Running
 
-; TODO update link
-
-The distributed version is [available on Kaggle](https://www.kaggle.com/), includes the notebook and dataset, and can be run immediately with the provided environment, requiring no further setup.
+The distributed version is [available on Kaggle](https://www.kaggle.com/code/johnstephens0/distributed-wgan-gp/notebook), includes the notebook and dataset, and can be run immediately with the provided environment, requiring no further setup.
 
 Supports multi-GPU, single-GPU and CPU-only training by default.
 To enable TPU training, set the appropriate strategy with:
